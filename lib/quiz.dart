@@ -12,7 +12,7 @@ import './answer.dart';
 
   final Function answerQuestion;
 
-  Quiz({ @required this.questions,@required this.answerQuestion,@required this.questionIndex});
+  Quiz({ this.questions,this.answerQuestion,this.questionIndex});
 
   @override
   Widget build(BuildContext context) {
