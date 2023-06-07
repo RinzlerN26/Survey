@@ -38,7 +38,7 @@ class Result extends StatelessWidget {
         style:TextStyle(fontSize: 36,fontWeight: FontWeight.bold),
         textAlign: TextAlign.center,
         ),
-        FlatButton(onPressed: resetHandler, child:Text("Restart Quiz"),textColor: Colors.blue)
+        MaterialButton(onPressed: resetHandler, child:Text("Restart Quiz"),textColor: Colors.blue)
       ],
     ));
   }
