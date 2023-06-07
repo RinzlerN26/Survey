@@ -12,7 +12,7 @@ import './answer.dart';
 
   final Function answerQuestion;
 
-  Quiz({ this.questions,this.answerQuestion,this.questionIndex});
+  Quiz({ required this.questions,required this.answerQuestion,required this.questionIndex});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ import './answer.dart';
                 ,),
              ...(questions[questionIndex]['answers'] as List<Map<String,Object>> ).map((answer){
 
-               return Answer(()=>answerQuestion(answer['score']),answer['text']);
+               return Answer(()=>answerQuestion(answer['score']),answer['text'] as String);
              }).toList()
             ]
             );
